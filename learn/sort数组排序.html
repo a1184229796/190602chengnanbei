@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>数组排序</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		//sort 的排序分别针对字母，数字，以及数组
+		// 字母：
+		var arr = ['q','s','sd','ds','ss','s','s'];
+		arr.sort();
+		console.log(arr);//["ds", "q", "s", "s", "s", "sd", "ss"]
+		//数字
+		var arr = ['1','23','34','5','665','9'];
+		arr.sort(function(a,b){return a-b});
+		console.log(arr)// ["1", "5", "9", "23", "34", "665"]
+		arr.sort(function(a,b){return b-a});
+		console.log(arr)// ["665", "34", "23", "9", "5", "1"]
+	</script>
+</body>
+</html>
